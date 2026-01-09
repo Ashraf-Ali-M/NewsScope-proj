@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.egg-info
+.env
+venv/
+env/
+
+# Model files (optional: keep large model files out of GitHub)
+*.bin
+*.safetensors
+*.h5
+
+# OS & IDE
+.DS_Store
+*.swp
+*.swo
+*.log
+.vscode/
+.idea/
+
+# Node & Chrome extension extras (if used)
+node_modules/
