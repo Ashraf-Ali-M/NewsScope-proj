@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "NewsScope Analyzer",
+  "version": "1.0",
+  "description": "Analyze political bias in news articles.",
+  "permissions": ["scripting", "activeTab", "contextMenus", "storage"],
+  "background": {
+    "page": "background.html"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "newsscope@example.com",
+      "strict_min_version": "109.0"
+    }
+  }
+}

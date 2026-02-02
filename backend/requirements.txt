@@ -3,3 +3,6 @@ uvicorn
 torch
 transformers
 sentencepiece
+hf_transfer
+requests
+python-dotenv

@@ -24,3 +24,11 @@ env/
 
 # Node & Chrome extension extras (if used)
 node_modules/
+
+# Legacy code
+newsscope-extension-legacy/
+
+# Test and development scripts
+backend/test_resumable_download.py
+backend/run_backend.sh
+backend/RESUMABLE_DOWNLOADS.md

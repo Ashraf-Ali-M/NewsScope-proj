@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.png" />
+    <title>NewsScope Analyzer</title>
+    <style>
+      /* Fallback styles in case JS/CSS bundle fails to load */
+      html, body {
+        min-width: 350px;
+        min-height: 500px;
+        width: 350px;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        font-family: sans-serif;
+        overflow: hidden;
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+      }
+      .loading-fallback {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading-fallback">
+        Loading NewsScope...
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
